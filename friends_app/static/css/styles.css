@@ -28,8 +28,11 @@ body {
 
 .msg-body {
     font-family: 'Permanent Marker', cursive;
-    font-size: 25px;
+    font-size: 1.5625rem;
     z-index: 1;
+    text-align: center;
+    word-wrap: normal;
+    padding: 1.5625rem;
 }
 
 .episode-thumbnail {
@@ -38,7 +41,7 @@ body {
 }
 #episode-thumbnail-image {
     position: relative;
-    width: 40%;
+    width: 31.25rem;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
