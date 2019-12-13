@@ -104,6 +104,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+Friends/
 env/
 venv/
 ENV/
@@ -127,3 +128,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# windows-created db files
+friends.db.bak
+friends.db.dat
+friends.db.dir
+
+# VS CODE
+.vscode/
