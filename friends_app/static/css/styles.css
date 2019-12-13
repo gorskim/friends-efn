@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+.episode {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Friends.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 50%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.msg-body {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5625rem;
+    z-index: 1;
+    text-align: center;
+    word-wrap: normal;
+    padding: 1.5625rem;
+}
+
+.episode-thumbnail {
+    display: flex;
+    justify-content: center;
+}
+#episode-thumbnail-image {
+    position: relative;
+    width: 31.25rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#episode-thumbnail-image:hover {
+    transform: scale(1.1);
+}

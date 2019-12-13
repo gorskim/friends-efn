@@ -1,0 +1,19 @@
+<head>
+    <title>Your Friends episode to watch!</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/coolScript.js') }}"></script>
+</head>
+<body>
+    <div class="episode">
+        <div class="overlay">
+        </div>
+        <div class="episode-thumbnail">
+            <img id="episode-thumbnail-image" src="../static/images/friends.svg" onclick="getNewEpisode()">
+        </div>
+        <div class="msg-body hidden">
+            {{ message }}
+        </div>
+    </div>
+</body>
