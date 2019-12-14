@@ -9,9 +9,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/static/images/Friends.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .background {
