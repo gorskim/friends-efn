@@ -45,6 +45,10 @@ body {
     padding: 1.5625rem;
 }
 
+.msg-body p {
+    margin: 10px 0;
+}
+
 .friends-logo-wrapper {
     display: block;
 }

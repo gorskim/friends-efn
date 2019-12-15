@@ -19,11 +19,10 @@ def index():
     episodes = db.get_db()
     chosen = random.choice(list(episodes.keys()))
     info = episodes[chosen]
-    message = (
-        f"Your episode for the current moment is {info['title']} "
-        f"(season: {info['season']}, episode: {info['episode']})"
-    )
-    return render_template('index.html', message=message)
+    title = f"{info['title']}"
+    season_episode = f"(season: {info['season']}, episode: {info['episode']})"
+    return render_template('index.html', title=title,
+                           season_episode=season_episode)
 
 
 @app.route('/favicon.ico')

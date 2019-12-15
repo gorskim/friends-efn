@@ -17,7 +17,9 @@
             <img id="friends-logo-image" src="{{ url_for('static', filename='images/friends.svg') }}" onclick="getNewEpisode()">
         </div>
         <div class="msg-body hidden">
-            {{ message }}
+            <p class="msg-body-main">Your episode for the current moment is:</p>
+            <p class="msg-body-title">{{ title }}</p>
+            <p class="msg-body-season">{{ season_episode }}</p>
         </div>
     </div>
 </body>
