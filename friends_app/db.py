@@ -2,7 +2,7 @@ import shelve
 
 from flask import g
 import logging
-from friends_app.scraper import scrape_friends
+from friends_app.scraper import download_image, scrape_friends
 from friends_app import app
 
 
@@ -19,8 +19,8 @@ def get_db():
             try:
                 episodes = scrape_friends()
                 log.info("Scrapping finished successfully")
-                for id, info in episodes.items():
-                    db[id] = info
+                for id, data in episodes.items():
+                    db[id] = data
             except:
                 log.exception("Scrapping failed.")
         return db
