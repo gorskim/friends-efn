@@ -2,7 +2,7 @@ import shelve
 
 from flask import g
 import logging
-from friends_app.scraper import download_image, scrape_friends
+from friends_app.scraper import scrape_friends
 from friends_app import app
 
 
