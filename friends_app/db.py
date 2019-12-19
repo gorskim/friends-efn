@@ -19,8 +19,8 @@ def get_db():
             try:
                 episodes = scrape_friends()
                 log.info("Scrapping finished successfully")
-                for id, info in episodes.items():
-                    db[id] = info
+                for id, data in episodes.items():
+                    db[id] = data
             except:
                 log.exception("Scrapping failed.")
         return db
