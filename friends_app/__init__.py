@@ -21,7 +21,7 @@ def index():
     data = episodes[chosen]
     title = f"{data['title']}"
     season_episode = f"(season: {data['season']}, episode: {data['episode']})"
-    description = data['description']
+    description = data["description"]
     return render_template("index.html", title=title, season_episode=season_episode)
 
 
