@@ -21,8 +21,15 @@ def index():
     data = episodes[chosen]
     title = f"{data['title']}"
     season_episode = f"(season: {data['season']}, episode: {data['episode']})"
+    image_id = f"s{data['season']}e{data['episode']}.jpg"
     description = data["description"]
-    return render_template("index.html", title=title, season_episode=season_episode)
+    return render_template(
+        "index.html",
+        title=title,
+        season_episode=season_episode,
+        description=description,
+        image_id=image_id
+    )
 
 
 @app.route("/favicon.ico")

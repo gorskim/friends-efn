@@ -67,3 +67,32 @@ body {
 #friends-logo-image:hover {
     transform: scale(1.1);
 }
+
+.details {
+    z-index: 1;
+}
+
+.details-collapsible {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5625rem;
+    text-align: center;
+}
+
+.details-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#episode-description {
+    font-family: 'Permanent Marker';
+    font-size: 15px;
+    width: 400px;
+    margin: 0;
+}
+
+#episode-image {
+    width: 250px;
+    height: auto;
+}

@@ -21,5 +21,12 @@
             <p class="msg-body-title">{{ title }}</p>
             <p class="msg-body-season">{{ season_episode }}</p>
         </div>
+        <div class="details">
+            <div class="details-collapsible" onclick="showOrHideDetails()">Details</div>
+            <div class="details-content">
+                <p id="episode-description">{{ description }}</p>
+                <img id="episode-image" src="{{ url_for('static', filename='images/episodes/' + image_id) }}">
+            </div>
+        </div>
     </div>
 </body>
