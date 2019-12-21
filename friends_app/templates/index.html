@@ -16,17 +16,21 @@
         <div class="friends-logo-wrapper">
             <img id="friends-logo-image" src="{{ url_for('static', filename='images/friends.svg') }}" onclick="getNewEpisode()">
         </div>
-        <div class="msg-body hidden">
-            <p class="msg-body-main">Your episode for the current moment is:</p>
-            <p class="msg-body-title">{{ title }}</p>
-            <p class="msg-body-season">{{ season_episode }}</p>
-        </div>
-        <div class="details">
-            <div class="details-collapsible" onclick="showOrHideDetails()">Details</div>
-            <div class="details-content">
-                <p id="episode-description">{{ description }}</p>
-                <img id="episode-image" src="{{ url_for('static', filename='images/episodes/' + image_id) }}">
+        <div class="main-content">
+            <div class="msg-body hidden">
+                <p class="msg-body-main">Your episode for the current moment is:</p>
+                <p class="msg-body-title">{{ title }}</p>
+                <p class="msg-body-season">{{ season_episode }}</p>
             </div>
+            <div class="details">
+                <div class="details-content">
+                    <p id="episode-description">{{ description }}</p>
+                    <img id="episode-image" src="{{ url_for('static', filename='images/episodes/' + image_id) }}">
+                </div>
+            </div>
+        </div>
+        <div class="btn-switch" onclick="changeDisplay()">
+            Tell me more!
         </div>
     </div>
 </body>

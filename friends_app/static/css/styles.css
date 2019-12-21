@@ -29,7 +29,13 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    opacity: 0.5;
+    opacity: 0.6;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
 }
 
 .hidden {
@@ -37,10 +43,11 @@ body {
 }
 
 .msg-body {
+    position: relative;
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5625rem;
-    z-index: 1;
     text-align: center;
+    z-index: 1;
     word-wrap: normal;
     padding: 1.5625rem;
 }
@@ -68,18 +75,41 @@ body {
     transform: scale(1.1);
 }
 
-.details {
+.btn-switch {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
     z-index: 1;
+    margin-top: 5px;
+    opacity: 0;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -ms-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
 }
 
-.details-collapsible {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 1.5625rem;
-    text-align: center;
+.btn-switch:hover {
+    transform: scale(1.1);
+    background-position: 0%;
+    -webkit-animation: color-change 2s infinite;
+    -moz-animation: color-change 2s infinite;
+    -o-animation: color-change 2s infinite;
+    -ms-animation: color-change 2s infinite;
+    animation: color-change 2s infinite;
+}
+
+.details {
+    padding: 25px;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    opacity: 0;
 }
 
 .details-content {
     display: flex;
+    font-size: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -93,6 +123,51 @@ body {
 }
 
 #episode-image {
+    margin-left: 50px;
     width: 250px;
     height: auto;
+    border-style: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.66);
+}
+
+@-webkit-keyframes color-change {
+    0% { color: #E91D24; }
+    20% { color: #01B2E7; }
+    40% { color: #FABC17; }
+    60% { color: #E91D24; }
+    80% { color: #FABC17; }
+    100% { color: #01B2E7; }
+}
+@-moz-keyframes color-change {
+    0% { color: #E91D24; }
+    20% { color: #01B2E7; }
+    40% { color: #FABC17; }
+    60% { color: #E91D24; }
+    80% { color: #FABC17; }
+    100% { color: #01B2E7; }
+}
+@-ms-keyframes color-change {
+    0% { color: #E91D24; }
+    20% { color: #01B2E7; }
+    40% { color: #FABC17; }
+    60% { color: #E91D24; }
+    80% { color: #FABC17; }
+    100% { color: #01B2E7; }
+}
+@-o-keyframes color-change {
+    0% { color: #E91D24; }
+    20% { color: #01B2E7; }
+    40% { color: #FABC17; }
+    60% { color: #E91D24; }
+    80% { color: #FABC17; }
+    100% { color: #01B2E7; }
+}
+@keyframes color-change {
+    0% { color: #E91D24; }
+    20% { color: #01B2E7; }
+    40% { color: #FABC17; }
+    60% { color: #E91D24; }
+    80% { color: #FABC17; }
+    100% { color: #01B2E7; }
 }
