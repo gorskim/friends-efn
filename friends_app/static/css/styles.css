@@ -120,6 +120,8 @@ body {
     font-size: 15px;
     width: 400px;
     margin: 0;
+    max-height: 135px;
+    overflow-y: scroll;
 }
 
 #episode-image {
