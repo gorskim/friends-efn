@@ -4,7 +4,7 @@ $(document).ready(function() {
     idleTime();
     $('.hidden').animate({'opacity': 1}, 3000);
     $('.btn-switch').animate({'opacity': 1}, 3000);
-    switchText = document.getElementsByClassName("btn-switch")[0].innerHTML
+    switchText = document.getElementsByClassName("btn-switch")[0];
 });
 
 animateOpacity = (selector, value, time) => {
@@ -27,13 +27,13 @@ changeDisplay = () => {
 showDetails = () => {
     animateOpacity('.hidden', 0, 1000);
     animateOpacity('.details', 1, 1000);
-    switchText = "Take me back!";
+    switchText.innerHTML = "Take me back!";
 };
 
 showMessage = () => {
     animateOpacity('.details', 0, 1000);
     animateOpacity('.hidden', 1, 1000);
-    switchText = "Tell me more!";
+    switchText.innerHTML = "Tell me more!";
 }
 
 var idleTime = function() {
