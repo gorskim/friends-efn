@@ -75,6 +75,14 @@ body {
     transform: scale(1.1);
 }
 
+.pulse {
+    animation: pulse 3s infinite;
+    -webkit-animation: pulse 3s infinite;
+    -moz-animation: pulse 3s infinite;
+    -ms-animation: pulse 3s infinite;
+    -o-animation: pulse 3s infinite;
+}
+
 .btn-switch {
     font-family: 'Permanent Marker', cursive;
     font-size: 30px;
@@ -133,6 +141,7 @@ body {
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.66);
 }
 
+/* color transition on hover */
 @-webkit-keyframes color-change {
     0% { color: #E91D24; }
     20% { color: #01B2E7; }
@@ -173,3 +182,34 @@ body {
     80% { color: #FABC17; }
     100% { color: #01B2E7; }
 }
+
+/* pulsating logo after being idle */
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+ }
+
+ @-moz-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+ }
+
+ @-ms-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+ }
+
+ @-o-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+ }
+
+ @keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+ }
