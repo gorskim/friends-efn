@@ -42,7 +42,6 @@ var idleTime = function() {
     function resetIdleTime() {
         clearTimeout(time);
         $('#friends-logo-image').removeClass('pulse')
-        console.log('reset')
         time = setTimeout(pulsateLogo, 30000)
     }
 }
